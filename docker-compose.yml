@@ -17,3 +17,11 @@ console:
   links:
     - waiter
     - datomicdb
+peerserver:
+  build: datomic-peer-server
+  ports:
+    - "9001:9001"
+  links:
+    - waiter
+    - datomicdb
+
